@@ -1,8 +1,5 @@
 <div class="container">
-    <h2>Counter</h2>
-    <div class="d-flex align-items-center">
-      <button class="btn btn-primary me-2" (click)="increase()">Increase</button>
-      <span>{{ count }}</span>
-      <button class="btn btn-primary ms-2" (click)="decrease()">Decrease</button>
-    </div>
-  </div>
+  <h2>Counter: {{ count }}</h2>
+  <button class="btn btn-primary" (click)="increase()">Increase</button>
+  <button class="btn btn-danger" (click)="decrease()">Decrease</button>
+</div>

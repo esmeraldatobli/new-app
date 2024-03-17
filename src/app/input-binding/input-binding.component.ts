@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-input-binding',
+  selector: 'input-binding',
   templateUrl: './input-binding.component.html',
   styleUrls: ['./input-binding.component.css']
 })
 export class InputBindingComponent {
   inputValue: string = '';
-  submitted: boolean = false;
 
-  resetInput() {
-    this.submitted = true;
-    this.inputValue = '';
+  submit() {
+    alert(`Submitted Value: ${this.inputValue}`);
+    this.inputValue = ''; // Reset input
   }
 }
+

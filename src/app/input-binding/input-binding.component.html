@@ -1,6 +1,5 @@
 <div class="container">
-    <h2>Input Binding</h2>
-    <input class="form-control mb-2" [(ngModel)]="inputValue" placeholder="Enter a value" />
-    <button class="btn btn-success" [disabled]="inputValue === ''" (click)="resetInput()">Submit</button>
-    <p *ngIf="submitted">Submitted value: {{ inputValue }}</p>
-  </div>
+  <input type="text" class="form-control" [(ngModel)]="inputValue" placeholder="Type something...">
+  <p>Input Value: {{ inputValue }}</p>
+  <button class="btn btn-success" (click)="submit()" [disabled]="inputValue === ''">Submit</button>
+</div>
